@@ -1,4 +1,6 @@
 config.json
+*/gallery/*.jpg
+ianertsonme/static/gallery/*.jpg
 
 # swap
 [._]*.s[a-v][a-z]

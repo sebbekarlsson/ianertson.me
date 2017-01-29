@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template, abort
 from github import Github
 from ianertsonme.config import config
+import glob
+import ntpath
 
 
 bp = Blueprint(__name__, __name__, template_folder='templates')
@@ -13,6 +15,11 @@ def show(filename):
         repos = list(g.get_user().get_repos())
         repos.sort(key=lambda x: x.stargazers_count, reverse=True)
 
-        return render_template('github.html', repos=repos)
+        return render_template(filename, repos=repos)
+
+    if filename == 'gallery.html':
+        images = [ntpath.basename(path) for path in glob.glob('ianertsonme/static/gallery/*.jpg')]
+
+        return render_template(filename, images=images)
             
     return render_template(filename)
