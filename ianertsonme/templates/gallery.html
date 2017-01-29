@@ -1,0 +1,6 @@
+<div class='gallery'>
+    {% for i in range(0, 100) %}
+    <div class='item' style='background-image: url("{{ url_for("static", filename="image/winter.jpg") }}");'>
+    </div>
+    {% endfor %}
+</div>

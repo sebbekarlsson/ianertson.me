@@ -1,0 +1,52 @@
+.post {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+
+    .part {
+        flex: 1;
+    }
+
+    .imagepart {
+        flex: none;
+        width: 30%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .contentpart {
+        box-sizing: border-box;
+        padding-left: 0.5rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 500;
+    }
+
+    p {
+        font-weight: 200;
+        margin-bottom: 0.5rem;
+    }
+
+    .title {
+        text-transform: uppercase;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 1rem;
+    }
+}

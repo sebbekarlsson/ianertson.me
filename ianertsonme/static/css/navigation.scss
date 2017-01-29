@@ -1,0 +1,34 @@
+.navbar {
+    width: 100%;
+    text-align: center;
+    height: 48px;
+
+    ul {
+        list-style: none;
+        height: 100%;
+
+        li {
+            display: inline-block;
+            height: 100%;
+
+            a {
+                display: inline-block;
+                height: 100%;
+                line-height: 48px;
+                text-decoration: none;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                transition: .3s;
+                border-bottom-style: solid;
+                border-bottom-width: 2px;
+                border-bottom-color: transparent;
+
+                &:hover {
+                    transition: .3s;
+                    cursor: pointer;
+                    border-bottom-color: black;
+                }
+            }
+        }
+    }
+}

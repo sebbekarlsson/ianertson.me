@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet'
+        type='text/css'
+        href='{{ url_for("static", filename="css/style.css") }}'>
+
+        <link
+        href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,800"
+        rel="stylesheet">
+
+        <script
+        type='text/javascript'
+        src='{{ url_for("static", filename="js/wget.js") }}'></script>
+        
+        <script
+        type='text/javascript'
+        src='{{ url_for("static", filename="js/main.js") }}'></script>
+
+        <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1">
+
+        <meta
+        charset='UTF-8'>
+    </head>
+    <body>
+        <div class='content' id='content'>
+            <nav class='navbar'>
+                <ul>
+                    <li>
+                        <a onclick='doView("home");'>Home</a>
+                    </li>
+                    <li>
+                        <a onclick='doView("projects");'>Projects</a>
+                    </li>
+                    <li>
+                        <a onclick='doView("art");'>Art</a>
+                    </li>
+                    <li>
+                        <a onclick='doView("music");'>Music</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class='usercontent'>
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>

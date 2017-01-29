@@ -1,0 +1,34 @@
+@media screen and (max-width: 1000px) {
+    .content {
+        width: 100%;
+    }
+
+    .post {
+        display: block;
+
+        .part {
+            width: 100%;
+        }
+
+        .imagepart {
+            height: 250px;
+            width: 100%;
+        }
+
+        .contentpart {
+            width: 100%;
+            padding-top: 0.5rem;
+        }
+    }
+
+    .gallery {
+        display: block;
+
+        .item {
+            width: 100%;
+            background-size: 50%;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+    }
+}
